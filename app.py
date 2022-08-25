@@ -18,4 +18,5 @@ else:
         E ele aceita <code>HTML</code> e <code>CSS</code>!
     ''', unsafe_allow_html=True)
 
-st.markdown('Parametros:' + st.experimental_get_query_params())
+st.markdown('Parametros:')
+st.markdown(st.experimental_get_query_params())
