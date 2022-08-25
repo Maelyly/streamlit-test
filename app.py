@@ -17,3 +17,5 @@ else:
         O STREAMLIT RODOU!<br>
         E ele aceita <code>HTML</code> e <code>CSS</code>!
     ''', unsafe_allow_html=True)
+
+st.markdown('Parametros:' + st.experimental_get_query_params())
