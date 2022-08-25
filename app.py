@@ -8,7 +8,7 @@ st.set_page_config(
     }
 )
 
-nome = st.text_input('Digite o seu nome:')
+nome = st.experimental_get_query_params().name
 if nome == '':
     st.markdown('O STREAMLIT RODOU!')
 else:
@@ -18,5 +18,3 @@ else:
         E ele aceita <code>HTML</code> e <code>CSS</code>!
     ''', unsafe_allow_html=True)
 
-st.markdown('Parametros:')
-st.markdown(st.experimental_get_query_params())
