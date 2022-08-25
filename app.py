@@ -9,6 +9,7 @@ st.set_page_config(
 )
 
 nome = st.experimental_get_query_params()
+
 if nome == '':
     st.markdown('O STREAMLIT RODOU!')
 else:
